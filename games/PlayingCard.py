@@ -1,5 +1,10 @@
 """
 PlayingCard
+
+Things to Consider
+-> Use dict with immutable objects ( Tuple ) as key instead of if-else
+-> Use list.index to use at as the 'value' for sorting ( comparing card_ranks with hand )
+-> Use list.count to get the count of elements in the list
 """
 
 
