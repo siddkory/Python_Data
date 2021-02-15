@@ -56,3 +56,21 @@ Cersei Lannister, Queen of the Andals and the First Men, Protector of the Seven 
 print(correct_title("sansa stark, lady of winterfell."))  "Sansa Stark, Lady of Winterfell.
 # print(correct_title("TYRION LANNISTER, HAND OF THE QUEEN."))  # Tyrion Lannister, Hand of the Queen."
 """
+
+print('______________________________________________________________________________')
+text: str = " Cersei Lannister, Queen of the Andals and the First Men, Protector of the Seven Kingdoms. "
+
+print('lower : ', text.lower())
+print('upper : ', text.upper())
+print('replace : ', text.replace("Queen", "Q"))
+print('reverse : ', text[::-1])
+print('Capitalize : ', text.capitalize())
+print('Caseless comparsion : ', text.casefold())
+print('Strip : ', text.strip())
+print('count : ', text.count('o'))
+print(' Find (index) : ', text.find('the'))
+print(' Right Find (index ): ', text.rfind('the'))
+print('Fills left side with zeroes or Zero Fill : ', text.zfill(100))
+print(' Split : ', text.split())
+print(' join : ', ''.join(text.split()))
+print(' Partition (3 tuple ): ', text.partition('Andals'))

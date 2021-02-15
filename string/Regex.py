@@ -21,3 +21,32 @@ $	Ends with	"world$"
 ()	Capture and group	 
 
 """
+
+print("-------------------------------------")
+word_txt = "Siddh02ds.!-_+=.,+*&^%$@!~`;:'\"\/\\(){}[]_-\|./.1"
+pattern_nonword_chars = re.compile('[\W]+')
+matches = pattern_nonword_chars.findall(word_txt)
+
+for match in matches:
+    print(match)
+
+print("-------------------------------------")
+pattern_wordchars = re.compile("[\w]+")
+matches = pattern_wordchars.findall(word_txt)
+
+for match in matches:
+    print(match)
+
+print("-------------------------------------")
+pattern_digit = re.compile("[\d]+")
+matches = pattern_digit.findall(word_txt)
+
+for match in matches:
+    print(match)
+
+print("-------------------------------------")
+pattern_not_digit = re.compile("[\D]+")
+matches = pattern_not_digit.findall(word_txt)
+
+for match in matches:
+    print(match)
